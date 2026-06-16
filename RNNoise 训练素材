@@ -1,14 +1,1 @@
-# 1. 进入你本地的 rnnoise 项目文件夹
-cd /path/to/your/rnnoise
 
-# 2. 确保远程仓库地址是你自己的
-git remote set-url origin https://github.com/Vivian-bit3434/rnnoise.git
-
-# 3. 添加所有文件
-git add .
-
-# 4. 提交
-git commit -m "上传所有项目文件"
-
-# 5. 推送到你的仓库
-git push -u origin main
