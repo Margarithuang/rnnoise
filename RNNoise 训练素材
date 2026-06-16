@@ -1,1 +1,25 @@
 git clone https://github.com/你的用户名/rnnoise-models.git
+# RNNoise 训练素材清单
+
+## 🗣️ 干净人声（48kHz，16-bit PCM，单声道WAV）
+| 数据集 | 链接 | 说明 |
+|--------|------|------|
+| Common Voice | https://www.mozilladatacollective.com/ | 需注册，选中文语音包 |
+| CNVVE Clean版 | https://doi.org/10.18419/DARUS-3898 | 包含Uh-huh、Shh等语音，48kHz |
+
+## 🔊 背景噪音（48kHz，16-bit PCM，单声道WAV）
+| 数据集 | 链接 | 说明 |
+|--------|------|------|
+| rnnoise_contributions | https://media.xiph.org/rnnoise/rnnoise_contributions.tar.gz | ⭐ 官方推荐，含空调、键盘、翻书等 |
+| PAN-AR 环境噪音 | https://zenodo.org/records/17831025 | 真实教室环境噪音 |
+
+## 📐 带回音数据（DTLN用）
+| 数据集 | 链接 | 说明 |
+|--------|------|------|
+| PAN-AR 脉冲响应 | https://zenodo.org/records/17831025 | 真实教室RIR，用于模拟回音 |
+
+## ⚙️ 数据预处理要求
+- 采样率：统一转为 48kHz（RNNoise要求）
+- 格式：16-bit PCM，单声道WAV
+- 噪声文件：纯背景音，时长3-10秒
+- 干净语音：句子长度2-5秒
